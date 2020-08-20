@@ -4,12 +4,12 @@
 #######################################################
 # #######################################################
 
-from store import Store
-from MBF import MBF
-from http import Http
-from login import Login
-from dump import Dump
-from brute import Brute
+import Store
+import MBF
+import Http
+import Login
+import Dump
+import Brute
 
 store = Store()
 

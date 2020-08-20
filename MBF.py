@@ -4,9 +4,9 @@
 #######################################################
 ####################################################
 
-from src import lib
-from src.store import Store
-from src.CLI import (inputs, prints, banner, br, progressBar)
+import lib
+from store import Store
+from CLI import (inputs, prints, banner, br, progressBar)
 from time import sleep
 import os
 

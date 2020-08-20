@@ -5,7 +5,7 @@
 ######################################################
 
 from threading import (Thread, Event)
-from src.CLI import (color, prints, inputs, write, br)
+from CLI import (color, prints, inputs, write, br)
 import re, time, json, os
 from datetime import datetime
 

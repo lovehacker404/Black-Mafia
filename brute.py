@@ -5,7 +5,7 @@
 
 import re, time, json, os
 from threading import (Thread, Event)
-from src.CLI import (prints, inputs, br, progressBar)
+from CLI import (prints, inputs, br, progressBar)
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
 
@@ -50,7 +50,7 @@ class Brute:
 
     def main(self, threads=40):
         self.reset()
-        prints('!m!NOTE : Anda harus ngedump ID terlebih dahulu sebelum menggunakan fitur ini!', blank_left=4)
+        prints('!m!NOTE : You must load ID first before using this feature!', blank_left=4)
         br(1)
         while len(self.user) == 0:
             id = inputs('!p!List ID (!b!dump/react.json!p!)  : !b!', blank_left=4)

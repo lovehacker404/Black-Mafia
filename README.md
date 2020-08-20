@@ -39,11 +39,11 @@
 
 😈 `pip2 install mechanize`
 
-😈 `python -m pip install -r Black/Mafia/requirements.txt`
+😈 `python -m pip install -r Black-Mafia/requirements.txt`
 
-😈 `git clone https://github.com/lovehacker404/Black/Mafia`
+😈 `git clone https://github.com/lovehacker404/Black-Mafia`
 
-😈 `cd Black/Mafia`
+😈 `cd Black-Mafia`
 
 👾 `python2 run.py`
 

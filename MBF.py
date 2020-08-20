@@ -5,9 +5,12 @@
 ####################################################
 
 import lib
-from store import Store
-from CLI import (inputs, prints, banner, br, progressBar)
-from time import sleep
+import store 
+import Store
+import CLI 
+import (inputs, prints, banner, br, progressBar)
+import time 
+import sleep
 import os
 
 class MBF:

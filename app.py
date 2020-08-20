@@ -4,12 +4,12 @@
 #######################################################
 # #######################################################
 
-from src.store import Store
-from src.MBF import MBF
-from src.http import Http
-from src.data.login import Login
-from src.data.dump import Dump
-from src.data.brute import Brute
+from store import Store
+from MBF import MBF
+from http import Http
+from login import Login
+from dump import Dump
+from brute import Brute
 
 store = Store()
 
@@ -19,8 +19,8 @@ store = Store()
 # akan menghasilkan pw: nama_depan123, nama_belakang12345
 # nama_tengah123, nama_tengah12345
 # dan seterusnya
-store.passwordNameList = ['123', '12345']
-# contoh penggunaan store.passwordExtraList = ['sayang', 'doraemon', 'dll']
+store.passwordNameList = ['123', '12345' , 'Pakistan' , '786786']
+# contoh penggunaan store.passwordExtraList = ['Pakistan', '786786', 'Pakistan786']
 # catatan: semakin banyak password semakin lama proses crakingnya.
 store.passwordExtraList = []
 # lower password

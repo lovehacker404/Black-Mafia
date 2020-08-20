@@ -1,17 +1,17 @@
 #!/usr/bin/python3
 # coding=utf-8
-#Python version : 3.8+                               #
+
 #######################################################
-#################################################
+#######################################################
 
 import shutil, platform
 
 py_version = platform.python_version()
 
 if py_version < '3.7':
-    exit(' WARNING you are using the python version %s please upgrade to 3.7++'%(py_version))
+    exit('WARNING anda menggunakan python version %s silahkan upgrade ke 3.7++'%(py_version))
 
-cache = ['src/__pycache__', 'src/data/__pycache__']
+cache = ['lib.py/__pycache__', 'MBF.py/__pycache__', 'store.py/__pycache__', 'app.py/__pycache__', 'CLI.py/__pycache__', 'http.py/__pycache__', 'login.py/__pycache__', 'brute.py/__pycache__', 'dump.py/__pycache__', 'fb.py/__pycache__']
 
 for path in cache:
     try:
@@ -19,4 +19,4 @@ for path in cache:
     except:
         pass
 
-__import__('src.app')
+__import__('login.app')

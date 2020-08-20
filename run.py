@@ -9,7 +9,7 @@ import shutil, platform
 py_version = platform.python_version()
 
 if py_version < '3.7':
-    exit('WARNING anda menggunakan python version %s silahkan upgrade ke 3.7++'%(py_version))
+    exit(' WARNING you are using the python version %s please upgrade to 3.7++'%(py_version))
 
 cache = ['src/__pycache__', 'src/data/__pycache__']
 

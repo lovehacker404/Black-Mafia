@@ -9,10 +9,12 @@ __BANNER__ = '''
   !b! ___ ___  ____   _____ 
   !b!|   T   T|    \ |     | !m!(!p!MULTI BRUTE FORCE FACEBOOK!m!)
   !b!| _   _ ||  o  )|   __j !m!-------------------------------
-  !b!|  \_/  ||     T|  l_   !h!Dev      !m!: !p!BlackMafia
-  !b!|   |   ||  O  ||   _]  !h!FB       !m!: !p!https//fb.me/lovehacker
+  !b!|  \_/  ||     T|  l_   !h!Author   !m!: !p!BlackMafia
+  !b!|   |   ||  O  ||   _]  !h!Creator  !m!: !p!lovehacker
   !b!|   |   ||     ||  T    !h!Github   !m!: !p!https://github.com/lovehacker404
   !b!l___j___jl_____jl__j    !h!Version  !m!: !p!3.0
+  !b!       BlackMafia
+  !b!      03094161457
 '''
 
 osname = platform.system().lower()

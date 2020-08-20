@@ -2,15 +2,7 @@
 # coding=utf-8
 
 #######################################################
-# File           : app.py                             #
-# Author         : DulLah                             #
-# Github         : https://github.com/dz-id           #
-# Facebook       : https://www.facebook.com/dulahz    #
-# Telegram       : https://t.me/DulLah                #
-# Python version : 3.8+                               #
-#######################################################
-#         RECODE? OKE CANTUMKAN NAMA PEMBUAT          #
-#######################################################
+# #######################################################
 
 from src.store import Store
 from src.MBF import MBF

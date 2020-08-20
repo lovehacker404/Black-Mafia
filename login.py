@@ -5,7 +5,7 @@
 
 import re, os, json, time
 import lib
-imoprt CLI import (inputs, prints, br, progressBar)
+From CLI import (inputs, prints, br, progressBar)
 import fb
 
 class Login(fb.FB):

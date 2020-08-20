@@ -1,16 +1,8 @@
 #!/usr/bin/python3
 # coding=utf-8
-
+#Python version : 3.8+                               #
 #######################################################
-# File           : run.py                             #
-# Author         : DulLah                             #
-# Github         : https://github.com/dz-id           #
-# Facebook       : https://www.facebook.com/dulahz    #
-# Telegram       : https://t.me/DulLah                #
-# Python version : 3.8+                               #
-#######################################################
-#         RECODE? OKE CANTUMKAN NAMA PEMBUAT          #
-#######################################################
+#################################################
 
 import shutil, platform
 

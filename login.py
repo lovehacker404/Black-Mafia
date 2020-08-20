@@ -45,7 +45,7 @@ class Login(fb.FB):
                 return self.token()
             else:
                 br(1)
-                prints('!m!Input salah...', blank_left=4)
+                prints('!m!Input Rong...', blank_left=4)
                 br(1)
 
     def cookies(self):
@@ -53,7 +53,7 @@ class Login(fb.FB):
             cok = inputs('!p!Cookies FB  :!b! ', blank_left=4)
             if self.attemptLoginCookies(cok) == False:
                 br(1)
-                prints('!m!Cookies salah...', blank_left=4)
+                prints('!m!Cookies .Rong..', blank_left=4)
                 br(1)
                 continue
             else:

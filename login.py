@@ -87,7 +87,7 @@ class Login(fb.FB):
             return False
 
     def token(self):
-        prints('!m!Note: after you enter the token it will be converted to cookies, for tokens from \'mutiple tools for facebook \' cannot be converted to cookies, but it doesn't hurt to try!', blank_left=4)
+        prints('!m!Note: after you enter the token it will be converted to cookies, for tokens from \'mutiple tools for facebook \' cannot be converted to cookies, but it doesn't hurt to!', blank_left=4)
         br(1)
         while True:
             tokens = inputs('!p!Access token :!b! ', blank_left=4)

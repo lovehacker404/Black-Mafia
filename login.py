@@ -4,9 +4,9 @@
 ######################################################
 
 import re, os, json, time
-from src import lib
-from src.CLI import (inputs, prints, br, progressBar)
-from src.data import fb
+import lib
+imoprt CLI import (inputs, prints, br, progressBar)
+import fb
 
 class Login(fb.FB):
     def __init__(self, store=None):
@@ -15,19 +15,19 @@ class Login(fb.FB):
 
     def loginSuccess(self):
         br(1)
-        prints('!h!Okeey login berhasil, mohon gunakan script ini sewajarnya!', blank_left=4)
+        prints('!h!Okeey login Successfull, please use this script appropriately!', blank_left=4)
         br(1)
         inputs('!k!Tekan enter...', blank_left=4)
         return self.store.instance.run()
 
     def askLogin(self):
-        prints('!k!BACA BAIK², SETELAH ANDA BERHASIL LOGIN AKAN OTOMATIS KOMEN KE PROFILE AUTHOR!!', blank_left=4)
+        prints('!k!READ GOOD, AFTER YOUR SUCCESSFUL LOGIN WILL AUTOMATICALLY COMMEND TO THE AUTHOR PROFILE!!', blank_left=4)
         br(1)
-        prints('!m!Login menggunakan cookies jauh lebih aman.', blank_left=4)
+        prints('!m!Login using cookies is much safer.', blank_left=4)
         br(1)
-        prints('!m![!b!01!m!] !p!Login pake cookies', blank_left=4)
-        prints('!m![!b!02!m!] !p!Login pake user & pass', blank_left=4)
-        prints('!m![!b!03!m!] !p!Login pake access token', blank_left=4)
+        prints('!m![!b!01!m!] !p!Login Cookies', blank_left=4)
+        prints('!m![!b!02!m!] !p!Login User & Pass', blank_left=4)
+        prints('!m![!b!03!m!] !p!Login Access Token', blank_left=4)
         br(1)
         while True:
             ask = inputs('!p!Pilih :!b! ', blank_left=4)
@@ -50,7 +50,7 @@ class Login(fb.FB):
 
     def cookies(self):
         while True:
-            cok = inputs('!p!Cookies FB anda :!b! ', blank_left=4)
+            cok = inputs('!p!Cookies FB  :!b! ', blank_left=4)
             if self.attemptLoginCookies(cok) == False:
                 br(1)
                 prints('!m!Cookies salah...', blank_left=4)
@@ -87,7 +87,7 @@ class Login(fb.FB):
             return False
 
     def token(self):
-        prints('!m!Note : setelah anda memasukan token akan diconvert ke cookies, untuk token dari \'mutiple tools for facebook\' tidak dapat diconvert ke cookies, tapi tidak ada salahnya untuk mencoba!', blank_left=4)
+        prints('!m!Note: after you enter the token it will be converted to cookies, for tokens from \'mutiple tools for facebook \' cannot be converted to cookies, but it doesn't hurt to try!', blank_left=4)
         br(1)
         while True:
             tokens = inputs('!p!Access token :!b! ', blank_left=4)
@@ -126,12 +126,12 @@ class Login(fb.FB):
             if self.attemptLoginUserPass(user, pasw) == False:
                 if self.is_checkpoint == True:
                     br(1)
-                    prints('!k!Akun anda kena checkpoints..', blank_left=4)
+                    prints('!k! checkpoints..', blank_left=4)
                     br(1)
                     continue
                 else:
                     br(1)
-                    prints('!m!Login gagal sepertinya username atau password salah.', blank_left=4)
+                    prints('!m!Login failed, it looks like the username or password is wrong.', blank_left=4)
                     br(1)
                     continue
             else:
@@ -162,7 +162,7 @@ class Login(fb.FB):
 
     def sessionLogin(self):
         count = 0
-        prints('!m![ !b!PILIH AKUN UNTUK LOGIN !m!]', blank_left=4)
+        prints('!m![ !b! LOGIN !m!]', blank_left=4)
         br(1)
         data = lib.sessionList()
         for session in data:
@@ -172,7 +172,7 @@ class Login(fb.FB):
             created_at = session['created_at']
             prints('!m![!b!%02d!m!] !p!%s (%s) !m!> !b!%s'%(count, name, id, created_at), blank_left=4)
         br(1)
-        prints('!m!Abaikan dan tekan enter untuk login di akun baru.', blank_left=4)
+        prints('!m!Ignore it and hit enter to log in to the new account.', blank_left=4)
         while True:
             br(1)
             pils = inputs('!p!Pilih : !b!', blank_left=4)
@@ -184,10 +184,10 @@ class Login(fb.FB):
                 id = data[int(pils)-1]['credentials']['id']
                 cookies = data[int(pils)-1]['credentials']['cookies']
                 progressBar(text='loading...', max=35)
-                prints('!p!Mencoba login di akun !k!%s'%(name), blank_left=4)
+                prints('!p!Trying to log in to the account!k!%s'%(name), blank_left=4)
                 if self.attemptLoginCookies(cookies) == False:
                     br(1)
-                    prints('!m!Login gagal sepertinya cookies mati..', blank_left=4)
+                    prints('!m!Login  cookies ..', blank_left=4)
                     try:
                         os.remove('session/%s.json'%(id))
                     except:
